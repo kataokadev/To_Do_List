@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/modern-normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/components/header.css" />
+    <link rel="stylesheet" href="./styles/components/main.css" />
+    <link rel="stylesheet" href="./styles/components/box.css" />
+    <link rel="stylesheet" href="./styles/components/tasks.css" />
+    <link rel="stylesheet" href="./styles/utils.css" />
+    <link rel="stylesheet" href="./styles/components/popups.css" />
+    <title>To do List</title>
+    <script src="./src/events.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="title">
+        <h1 class="title__text">To Do List</h1>
+      </div>
+
+      <img class="logo" src="./public/Logo.png" alt="Logo R" />
+    </header>
+    <main class="wrapper">
+      <section class="container__box">
+        <div class="box">
+          <div class="subtitle__box">
+            <h2 class="subtitle">Plan List</h2>
+          </div>
+
+          <div class="forms">
+            <input
+              type="text"
+              maxlength="40"
+              id="task__input"
+              placeholder="Text here!"
+            />
+            <input type="date" name="date" id="date__input" />
+            <button class="add__btn btn">Add</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="task__container"></div>
+    </main>
+
+    <!-- Toast de aviso -->
+    <div class="toast" id="toast">
+      <span class="toast__icon"></span>
+      <span class="toast__message"></span>
+    </div>
+
+    <!-- Modal de confirmação de delete -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal">
+        <p class="modal__title">Remover task</p>
+        <p class="modal__message">Tem certeza que deseja remover esta task?</p>
+        <div class="modal__actions">
+          <button class="btn modal__btn modal__btn--cancel" id="modal-cancel">
+            Cancelar
+          </button>
+          <button class="btn modal__btn modal__btn--confirm" id="modal-confirm">
+            Remover
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
