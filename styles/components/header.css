@@ -15,3 +15,32 @@
   height: var(--size-6xl);
   width: var(--size-6xl);
 }
+
+/* md */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1.5rem;
+  }
+
+  .logo {
+    height: var(--size-5xl);
+    width: var(--size-5xl);
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .header {
+    padding: 0 1rem;
+  }
+
+  .logo {
+    height: var(--size-4xl);
+    width: var(--size-4xl);
+  }
+
+  .title__text {
+    font-size: var(--size-2xl);
+    letter-spacing: 3px;
+  }
+}

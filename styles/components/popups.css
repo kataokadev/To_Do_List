@@ -118,3 +118,18 @@
 .modal__btn--confirm:hover {
   background-color: #e03c3c;
 }
+
+/* xs */
+@media (max-width: 475px) {
+  .modal {
+    width: 88%;
+    padding: 1.5rem;
+  }
+
+  .toast {
+    width: 88%;
+    white-space: normal;
+    text-align: center;
+    font-size: 0.82rem;
+  }
+}

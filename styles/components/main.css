@@ -1,5 +1,6 @@
 .wrapper {
   height: calc(100vh - 10vh);
+  height: calc(100dvh - 10vh);
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -15,4 +16,11 @@
   letter-spacing: 6px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .wrapper {
+    height: calc(100dvh - 10vh);
+  }
 }
