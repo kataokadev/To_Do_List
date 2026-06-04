@@ -68,17 +68,17 @@ function formatDate(dateStr) {
   const [year, month, day] = dateStr.split("-");
   const months = [
     "jan",
-    "fev",
+    "feb",
     "mar",
-    "abr",
-    "mai",
+    "apr",
+    "may",
     "jun",
     "jul",
-    "ago",
-    "set",
-    "out",
+    "aug",
+    "sep",
+    "oct",
     "nov",
-    "dez",
+    "dec",
   ];
   return `${day} ${months[parseInt(month) - 1]}. ${year}`;
 }
